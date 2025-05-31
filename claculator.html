@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./claculator.css">
+</head>
+<body>
+    <div class="calculator">
+    <input type="text" id="result"  class="display"></input>
+    
+    <div class="buttons">
+      <button class="btn" onclick="getinput('7')">7</button>
+      <button class="btn" onclick="getinput('8')">8</button>
+      <button class="btn" onclick="getinput('9')">9</button>
+      <button class="operator" onclick="getinput('/')">÷</button>
+
+      <button class="btn" onclick="getinput('4')">4</button>
+      <button class="btn" onclick="getinput('5')">5</button>
+      <button class="btn" onclick="getinput('6')">6</button>
+      <button class="operator" onclick="getinput('*')">×</button>
+
+      <button class="btn" onclick="getinput('1')">1</button>
+      <button class="btn" onclick="getinput('2')">2</button>
+      <button class="btn" onclick="getinput('3')">3</button>
+      <button class="operator" onclick="getinput('-')">−</button>
+
+      <button class="btn" onclick="getinput('0')">0</button>
+      <button class="btn" onclick="getinput('00')">00</button>
+      <button class="btn" onclick="clearResult()">AC</button>
+      <button class="operator" onclick="getinput('+')">+</button>
+     
+      
+      
+    </div>
+    <div class="set">
+      <button class="equals" onclick="getResult()">=</button>
+    <button  class="operator" onclick="toDelete()">DEL</button>
+    <button class="operator" onclick="getSquare('')">X <small>2</small></button>
+    </div>
+  </div>
+<script src="./calculator.js"></script>
+</body>
+</html>
